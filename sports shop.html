@@ -1,1 +1,93 @@
-<h1>Welcome to Sports Shop!</h1><p>Click the button to add an item to the cart.</p><div class="item">  <p> <img src="https://www.rockstaracademy.com/lib/images/news/basketball.jpeg"height=100 width=100>  Basketball-₹600</p><button onclick="addToCart('Basketball',600)">Add to Cart</button></div><div class="item">  <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1Up2QNmOSr5kiGmr7El9wx_CjX7DjLyxaw&s"height=100 width=100>Football-₹600</p><button onclick="addToCart(''Football,600)">Add to Cart</button></div><div class="item">  <p> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Beach_volleyball_%284701437938%29.jpg"height=100 width=100>Volleyball-₹500</p><button onclick="addToCart(''Volleyball,500)">Add to Cart</button></div><div class="item">  <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7f80umB2vgtlHUk-EVRdBHIMheNnkiRcLQ&s"height=100 width=100>Badminton-₹700</p><button onclick="addToCart(''Badminton,700)">Add to Cart</button></div><div class="item">  <p> <img src="https://hips.hearstapps.com/hmg-prod/images/ghk-testing-pickleball-paddles-1668457089.png?crop=0.665xw:1.00xh;0.154xw,0&resize=640:*"height=100 width=100>Pickleball-₹600</p><button onclick="addToCart(''Pickleball,600)">Add to Cart</button></div><div class="item">  <p> <img src="https://cdn.create.vista.com/api/media/small/436989214/stock-photo-partial-view-sportive-young-woman-holding-tennis-racket-ball-while"height=100 width=100>Tennis-₹800</p><button onclick="addToCart(''Tennis,800)">Add to Cart</button></div><div class="item">  <p> <img src="https://media.istockphoto.com/id/177427917/photo/close-up-of-red-cricket-ball-and-bat-sitting-on-grass.jpg?s=612x612&w=0&k=20&c=DcorerbBUeDNTfld3OclgHxCty4jih2yDCzipffX6zw="height=100 width=100>Cricket-₹1000</p><button onclick="addToCart(''Cricket,1000)">Add to Cart</button></div><div class="item">  <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ZmcN9a_elJSrTHbQU6wZevT_pptbB3T2yw&s"height=100 width=100>Hockey-₹400</p><button onclick="addToCart(''Hockey,400)">Add to Cart</button></div><div class="item">  <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhKQ5s934k2MmjSb3DoTx8JJOWOlusQrFBJQ&s"height=100 width=100>Table Tennis-₹400</p><button onclick="addToCart(''Table Tennis,400)">Add to Cart</button></div><div class="item">  <p> <img src="https://i2-prod.walesonline.co.uk/article27608572.ece/ALTERNATES/s1200c/0_New-Zealand-v-South-Africa-Rugby-International-25-Aug-2023.jpg"height=100 width=100>Rugby-₹200</p><button onclick="addToCart(''Rugby,200)">Add to Cart</button></div><div class="cart"><h3>Shopping Cart</h3><p id="cartList">Cart is empty</p><h3>Total: ₹<span id="totalAmount">)</span></h3></div><script>let totalAmount=0;function addToCart(item, price) {let cart=document.getElementById("cartList");let total=document.getElementById("cartList");// Update cart itemsif (cart.innerHTML === "Cart is empty") {cart.innerHTML=item;} else {cart.innerHTML += " , " + item;}// Update total amounttotalAmount += price;total.innerHTML=totalAmount;}</body></html>
+<h1>Welcome to Sports Shop!</h1>
+<p>Click the button to add an item to the cart.</p>
+<div class="item">
+  <p>
+ <img src="https://www.rockstaracademy.com/lib/images/news/basketball.jpeg"height=100 width=100>  
+Basketball-₹600</p>
+<button onclick="addToCart('Basketball',600)">Add to Cart</button>
+</div>
+
+<div class="item">
+  <p>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1Up2QNmOSr5kiGmr7El9wx_CjX7DjLyxaw&s"height=100 width=100>
+Football-₹600</p>
+<button onclick="addToCart(''Football,600)">Add to Cart</button>
+</div>
+
+<div class="item">
+  <p>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Beach_volleyball_%284701437938%29.jpg"height=100 width=100>
+Volleyball-₹500</p>
+<button onclick="addToCart(''Volleyball,500)">Add to Cart</button>
+</div>
+
+<div class="item">
+  <p>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7f80umB2vgtlHUk-EVRdBHIMheNnkiRcLQ&s"height=100 width=100>
+Badminton-₹700</p>
+<button onclick="addToCart(''Badminton,700)">Add to Cart</button>
+</div>
+
+<div class="item">
+  <p>
+ <img src="https://hips.hearstapps.com/hmg-prod/images/ghk-testing-pickleball-paddles-1668457089.png?crop=0.665xw:1.00xh;0.154xw,0&resize=640:*"height=100 width=100>
+Pickleball-₹600</p>
+<button onclick="addToCart(''Pickleball,600)">Add to Cart</button>
+</div>
+
+<div class="item">
+  <p>
+ <img src="https://cdn.create.vista.com/api/media/small/436989214/stock-photo-partial-view-sportive-young-woman-holding-tennis-racket-ball-while"height=100 width=100>
+Tennis-₹800</p>
+<button onclick="addToCart(''Tennis,800)">Add to Cart</button>
+</div>
+
+<div class="item">
+  <p>
+ <img src="https://media.istockphoto.com/id/177427917/photo/close-up-of-red-cricket-ball-and-bat-sitting-on-grass.jpg?s=612x612&w=0&k=20&c=DcorerbBUeDNTfld3OclgHxCty4jih2yDCzipffX6zw="height=100 width=100>
+Cricket-₹1000</p>
+<button onclick="addToCart(''Cricket,1000)">Add to Cart</button>
+</div>
+
+<div class="item">
+  <p>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ZmcN9a_elJSrTHbQU6wZevT_pptbB3T2yw&s"height=100 width=100>
+Hockey-₹400</p>
+<button onclick="addToCart(''Hockey,400)">Add to Cart</button>
+</div>
+
+<div class="item">
+  <p>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhKQ5s934k2MmjSb3DoTx8JJOWOlusQrFBJQ&s"height=100 width=100>
+Table Tennis-₹400</p>
+<button onclick="addToCart(''Table Tennis,400)">Add to Cart</button>
+</div>
+
+<div class="item">
+  <p>
+ <img src="https://i2-prod.walesonline.co.uk/article27608572.ece/ALTERNATES/s1200c/0_New-Zealand-v-South-Africa-Rugby-International-25-Aug-2023.jpg"height=100 width=100>
+Rugby-₹200</p>
+<button onclick="addToCart(''Rugby,200)">Add to Cart</button>
+</div>
+<div class="cart">
+<h3>Shopping Cart</h3>
+<p id="cartList">Cart is empty</p>
+<h3>Total: ₹<span id="totalAmount">0</span></h3>
+</div>
+<script>
+let totalAmount=0;
+function addToCart(item, price) {
+let cart=document.getElementById("cartList");
+let total=document.getElementById("cartList");
+// Update cart items
+if (cart.innerHTML === "Cart is empty") {
+cart.innerHTML=item;
+} else {
+cart.innerHTML += " , " + item;
+}
+// Update total amount
+totalAmount += price;
+total.innerHTML=totalAmount;
+}
+</body>
+</html>
