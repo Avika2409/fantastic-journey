@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Shopping cart
+</title>
+body  {
+font-family: Arial , sans-serif;
+text-align: center :
+background-color: aliceblue;
+}
+h1 {
+color: blue;
+}
+.item {
+background-color: #ffa07a;
+border: 2px solid #333;
+padding: 10px;
+margin: 10px;
+display: inline-block;
+}
+.cart {
+margin-top: 20px;
+padding: 10px;
+background-color: #aaf0d1:
+display : inline-block;
+border-radius: 10px;
+}
+</style>
+</head>
+<body>      
+<h1>Welcome to Sports Shop!</h1>
+<p>Click the button to add an item to the cart.</p>
+<div class="item">
+<p>
+<img src=https://cdn.pixabay.com/photo/2022/11/22/20/25/ball-7610545_1280.jpg"height=100 width=100> Basketball-₹600</p>
+<button onclick="addToCart('Basketball',600)">Add to </div>
+
+
+<div class="item">
+  <p>
+<img src="https://tse1.mm.bing.net/th/id/OIP.2FAF0XXi5fcfOkmPyK_fPAHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"height=100 width=100>
+  Football - ₹600</p>
+<button onclick=" addToCart('Basketball',600)">Add to Cart</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>javascript</title>
+</head>
+<body>
+<script>
+let num1= 5;
+let num2 =3;
+let num = num1 + num2;
+alert("the sum of two numbers ="+sum);
+</script>
+</body>
+</html>

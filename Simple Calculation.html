@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+</head>
+<body>
+<script>
+let num1 = parseFloat(prompt("Enter the first number:"));
+let num2 = parseFloat(prompt("Enter the second number:"));
+
+if (isNaN(num1) || isNaN(num2)) {
+alert("invalid input. Please enter numbers.");
+} else {
+let sum = num1+num2;
+alert("The sum is: "+sum);
+}
+</script>
+</body>
+</html>
