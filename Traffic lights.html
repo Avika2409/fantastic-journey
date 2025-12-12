@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Traffic Light Simulation</title>
+  <style>
+    body {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    .traffic-light {
+      width: 100px;
+      background-color: black;
+      padding: 20px;
+      border-radius: 20px;
+      margin: 0 auto;
+    }
+    .light {
+      width: 60px;
+      height: 60px;
+      margin: 15px auto;
+      border-radius: 50%;
+      background-color: #555;
+      opacity: 0.3;
+      transition: opacity 0.5s;
+    }
+    .active {
+      opacity: 1;
+    }
+    .red { background-color: red; }
+    .yellow { background-color: yellow; }
+    .green { background-color: green; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Traffic Light Simulation</h1>
+    <div class="traffic-light">
+      <div id="red" class="light red"></div>
+      <div id="yellow" class="light yellow"></div>
+      <div id="green" class="light green"></div>
+    </div>
+  </div>
+
+  <script>
+    function turnOffAll() {
+      document.getElementById("red").classList.remove("active");
+      document.getElementById("yellow").classList.remove("active");
+      document.getElementById("green").classList.remove("active");
+    }
+
+    function cycleLights() {
+      turnOffAll();
+      document.getElementById("red").classList.add("active");
+      setTimeout(() => {
+        turnOffAll();
+        document.getElementById("yellow").classList.add("active");
+      }, 3000);
+      setTimeout(() => {
+        turnOffAll();
+        document.getElementById("green").classList.add("active");
+      }, 5000);
+    }
+
+    cycleLights();
+    setInterval(cycleLights, 8000);
+  </script>
+</body>
+</html>
