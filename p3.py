@@ -1,0 +1,1 @@
+print(thistuple[:4])
